@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <meta name = "description" content = "Portfolio of Yusuf Morsi"/>
+	<title> Yusuf Morsi | Projects </title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/scroll-file.css">
+    <script src =“js/main.js”></script>
+    <script src =“js/scroll-file.js”></script>
+    <link rel="icon" href="../images/fc.png"> 
+</head>
+   
+	<body>
+     
+      <header><h1>Yusuf Morsi's Portfolio</h1><nav>
+            <a href = "index.html">Home</a>
+            <a href = "/pages/projects.html">Projects</a>
+            <a href = "/pages/about.html">About</a>
+           <!-- <a href = "/pages/photos.html">Photography</a> -->
+       <!--     <a href = "/pages/contact.html">Contact</a> -->
+            </nav> <br> </header>   
+        
+  <center> <div class="container">
+                <img src = "../images/dp1.jpg" style= "width: 100%;"> 
+                    <div class="centered"><h7>Projects</h7></div> </div></center><br>       
+
+<script> 
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction1()};
+
+function myFunction1() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}    
+    
+</script>       
+        
+<div class="header"><div class="progress-container"><div class="progress-bar" id="myBar"></div></div></div>       
+  <center>      
+ <p>This webpage includes a lot of the projects that I worked on. This page is updated regularly, so stay tuned!</p></center>
+ 
+        <fieldset>
+            <center> <h4><b>Projects: Personal Favorites</b></h4> 
+                <li> <a href = "../pages/projects.html#drow" id = "blackk">Drowsiness Detection with OpenCV and Arduino</a></li><br>
+             <li> <a href = "../pages/projects.html#dp" id = "blackk">IEEE Quarterly Project: Dear Pressure</a></li><br>
+           <li> <a href = "../pages/projects.html#ultsens" id = "blackk">Non-Contact Range Detection of HC-SR04 Ultrasonic Sensor</a></li><br>
+           <li>  <a href = "../pages/projects.html#connect4" id = "blackk">Connect 4 with C Programming</a></li><br>
+           <li>  <a href = "../pages/projects.html#lfa" id = "blackk">Light-Following Arm with MATLAB and Arduino</a></li><br>
+            <li>  <a href = "../pages/projects2.html#snk" id = "blackk">JavaScript Snake Game</a></li><br>
+           <li> <a href = "../pages/projects3.html#sdsu" id = "blackk">Tensile Strength of ABS Plastic Moldings and 3D Printed Samples</a></li><br>
+             <li>  <a href = "../pages/projects3.html#keyb" id = "blackk">Arduino Music Keyboard</a></li><br></center>
+        
+        </fieldset>
+        
+     <center> <p><b>You're Currently On Page 1</b></p><p class = "pjj">Pages: <a href = "/pages/projects.html">1</a><a href = "/pages/projects2.html">2</a><a href = "/pages/projects3.html">3</a></p></center> 
+        <hr>     
+            
+        
+  <!-- The list of projects begins here -->  
+        
+  <section id = "Other">   
+ <h5 id = "drow"> Arduino, Python, OpenCV: Swaying Attention: Drowsiness Detection (Winter 2021) </h5>
+    <p>For our final project in ECE 16 (Rapid Software and Hardware Design) at UCSD, my partner and I used some of the skills we
+      learning throughout the quarter to create a design that we had in mind. Swaying Attention is a project that aims to tackle the problem of student attention. Students notpaying attention in class was a problem when school is in person but now that most students are doing school online as a result of quarantine the problem has gotten a lot worse. Many students,
+        including ourselves, have a hard time paying attention in online lectures and end up missing a
+        major portion of the content. To solve this problem we created Swaying attention, a program that
+        uses eye detection to track students dozing off and gives them a reminder to stay focused. To
+        achieve this we used Python, OpenCV, D-lib, Arduino-C code and a Sparkfun ESP32 board. Our
+        prototype is able to detect drowsiness and outputs a message to the student on a display as well as
+        making noise with a buzzer to get their attention.</p>
+             <center> 
+                <div><embed src="../projectdocs/SwayingAttention.pdf" width="650px" height="780px"/> </div> 
+                 <br>
+                 <embed src="../projectdocs/SwayingAttentionPres.pdf" width="1120px" height="700px" />
+        </center>
+     </section><br>
+ <hr>        
+        
+        
+        
+        
+        
+ <section id = "Other">   
+ <h5 id = "dp">HTML, CSS, JavaScript, and Python: Dear Pressure (Fall 2020) </h5>
+    <p> As a member of UCSD's IEEE branch, myself and four other engineering students worked on a quarterly project together. We created a website that fit this quarter's theme: health. Our site, Dear Pressure, includes a Python workout recommender that tells people which workouts they should do based on their inputs. Other features include a fitness news section, an embedded calendar, and an about section. Below, you can find our project documentation and a video demonstration of the website. </p>
+             <center> 
+                <div><iframe width="960" height="420" src="https://www.youtube.com/embed/DAJ6kvTrCNI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                 <br>
+                 <div><iframe src="https://docs.google.com/document/d/e/2PACX-1vQhaoiG60CxAEqD29NTjuHytCeLx5AMap3f7qz2eUKnM6uHy-QZj9mB3ITdjyVFMHq97s6LIdvygQdQ/pub?embedded=true" width="850" height="1180"></iframe></div><br>
+        </center>
+     </section><br>
+ <hr>         
+        
+        
+ <section id = "Other">   
+ <h5 id = "ultsens"> Arduino, Eagle, Onshape, and Fritzing: Non-Contact Range Detection of Ultrasonic Sensor (Fall 2020) </h5>
+    <p>While taking ECE 5 (Introduction to Electrical Engineering) at UCSD, myself and two other people formed a group to create a lab assignment. For this lab, the student is meant to work with a HC-SR04 ultrasonic sensor to write Arduino-C code that will print this general distance the pulse travelled upon meeting an obstacle. In addition, they need to graph it onto Arduino IDE’s serial monitor and continue to build upon the HC-SR04 by integrating three LEDs and a buzzer to signify danger zones. An IR Remote and Receiver were also added as additional components to pause the HC-SR04 sensor. If the danger zone is activated, it can be detected whether the obstacle is an object or a human being through a DHT11 temperature/humidity sensor. This will all compose into our final design: the Ultrasonic Sensor Security System. </p>
+             <center> 
+                <div><iframe width="960" height="420" src="https://www.youtube.com/embed/WjJqojVelwM?list=UUrWqlV5Np2_CK-z2SPpb-ww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div> 
+        </center>
+     </section><br>
+ <hr>          
+        
+        
+  <section id = "Other">   
+ <h5 id = "connect4"> C Programming: Connect 4 (Fall 2020) </h5>
+    <p>Using the C Programming language, I created a connect 4 game in which the user plays against the computer, which has randomized moves.</p>
+             <center> 
+                <iframe width="960" height="420" src="https://www.youtube.com/embed/pdMVe-kLRdQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </center>
+     </section><br>
+ <hr>          
+        
+ <section id = "Other">   
+ <h5> C Programming: Comparing DNA Sequences (Fall 2020) </h5>
+    <p> In this project, I created a C program that compares 3 DNA sequences from an input file with one another and prints where they overlap.</p>
+               <center> 
+                <iframe width="960" height="420" src="https://www.youtube.com/embed/81MZLFPX5jE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </center>
+     </section><br>
+ <hr>        
+        
+ <section id = "Other">   
+ <h5 id = "lfa"> MATLAB and Arduino: Light-Following Arm (Fall 2020) </h5>
+    <p> In this project, I used an Arduino Mega to have lined up LEDs light up one-by-one. Then, using MATLAB, a second breadboard, a servo motor, and photoresistors, I had the photoresistors follow the lights that would turn on.</p>
+          <center> 
+               <div><iframe width="960" height="420" src="https://www.youtube.com/embed/p5GxtdExcM8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </center>
+     </section><br>
+ <hr>        
+        
+<section id = "Other">   
+ <h5> C Programming: Match and Hit (Fall 2020) </h5>
+    <p> In this program, I created match and hit game that a user could play with.</p>
+          <center> 
+                <iframe width="960" height="420" src="https://www.youtube.com/embed/sms6Ew806Ws?list=UUrWqlV5Np2_CK-z2SPpb-ww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </center>
+     </section><br>
+ <hr> 
+        
+        
+<section id = "Other">   
+ <h5> C Programming: Cosine Approximation (Fall 2020) </h5>
+    <p> In this project, I created a program that approximates the value of the cosine of a number based on an input file that mentions the number of calculations needed to be made, which method (out of two) should be used, and what number to take the cosine of.</p>
+          <center> 
+                <iframe width="960" height="420" src="https://www.youtube.com/embed/1NXwfxkI0bE?list=UUrWqlV5Np2_CK-z2SPpb-ww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </center>
+     </section><br>
+ <hr>          
+        
+<section id = "Other">   
+ <h5> MATLAB: Image Processing (Fall 2020) </h5>
+    <p> In this image processing project, I learned to work with pixels and matrices, explore image structure, create image historgrams, use image filtering, edit pictures, and more using MATLAB. Below is an example of a few of the many features I experimented with. </p>
+          <center> 
+               <div><blockquote class="imgur-embed-pub" lang="en" data-id="a/gON5RvI" data-context="false" ><a href="//imgur.com/a/gON5RvI">l22</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script></div>
+        </center>
+     </section><br>
+ <hr>         
+        
+        
+<section id = "Other">   
+ <h5> MATLAB and Arduino: Signal Processing (Fall 2020) </h5>
+    <p> The objective of this project was not only to give us a better understanding of MATLAB, but also familiarize us with digital signal processing. It was meant to
+        teach us how to digitize signals with MATLAB and Arduino. In addition, we
+        learned how to both create and analyze Power Spectrum plots. Below are examples of a few of the many plots that I created.</p>
+          <center> 
+               <div><blockquote class="imgur-embed-pub" lang="en" data-id="a/mzlMO7M" data-context="false" ><a href="//imgur.com/a/mzlMO7M">matlabplots</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script></div>
+        </center>
+     </section><br>
+ <hr>      
+        
+<section id = "Other">   
+ <h5> C Programming: Encryption (Fall 2020) </h5>
+    <p> In this project, I created a C program that encrypts words based on an encryption key.</p>
+             <center> 
+                <iframe width="960" height="420" src="https://www.youtube.com/embed/dy7pHTFLGNU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </center>
+     </section><br>
+ <hr> 
+        
+
+ 
+        
+	 <center> <p><b>You're Currently On Page 1</b></p><p class = "pjj">Pages: <a href = "/pages/projects.html">1</a><a href = "/pages/projects2.html">2</a><a href = "/pages/projects3.html">3</a></p><footer><hr><nav>
+            <a href = "/pages/index.html">Home</a>
+            <a href = "/pages/projects.html">Projects</a>
+            <a href = "/pages/about.html">About</a></nav>
+             <!-- <a href = "/pages/photos.html">Photography</a> -->
+       <!--     <a href = "/pages/contact.html">Contact</a> -->
+        </footer></center> </body></html>
