@@ -10,3 +10,8 @@ a[href$=".pdf"]
 	background:url("fc.png") no-repeat left;
 	padding-left:25px;
 }
+a[href$=".pdf"]:before
+{
+  content:"\f1c1  ";
+  font-family: fontawesome;
+}
